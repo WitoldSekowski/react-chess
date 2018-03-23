@@ -1,0 +1,40 @@
+.chess-board-wrapper {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chess-field {
+    height: 50px;
+    width: 50px;
+    float:left;
+}
+
+.chess-field-overlay {
+    position:relative;
+        height: 50px;
+    width: 50px;
+    z-index: 50;
+    float:left;
+}
+
+.chess-field-overlay.green {
+    background: green;
+    opacity: 0.8;
+}
+
+.chess-field.black {
+    background: rgba(0, 0, 0, 0.79);
+}
+
+.chess-field.white {
+    background: rgba(204, 204, 204, 0.77);
+}
+
+.chess-field-overlay.green .chess-field.black {
+    background: transparent
+}
+
+.chess-field-overlay.green .chess-field.white {
+    background: transparent
+}
